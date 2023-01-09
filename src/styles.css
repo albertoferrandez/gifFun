@@ -1,0 +1,21 @@
+@import "@picocss/pico";
+
+.card{
+    width: 280px;
+}
+
+.card img{
+    border-radius: 5px;
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    place-items: center;
+}
+
+
