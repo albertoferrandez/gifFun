@@ -3,14 +3,12 @@ import AddCategory from "./components/AddCategory"
 import Footer from "./components/Footer"
 import GifGrid from "./components/GifGrid"
 
-const GiftExpertApp = () => {
+const GifFun = () => {
 
     const [categories, setCategories] = useState([
         'One Punch'
     ])
-
     const handleAddCategories = (newCategory) => {
-
         if (categories.includes(newCategory)) return
 
         setCategories([newCategory, ...categories])
@@ -23,7 +21,6 @@ const GiftExpertApp = () => {
                 <h1>gifFun</h1>
 
                 <AddCategory
-                    //setCategories={setCategories}
                     onNewCategory={(event) => handleAddCategories(event)}
                 />
 
@@ -43,4 +40,4 @@ const GiftExpertApp = () => {
     )
 }
 
-export default GiftExpertApp
+export default GifFun
